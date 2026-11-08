@@ -1,0 +1,7 @@
+# Local tools for image-studio.
+# studio.py / poster.py run their heavy parts on Modal; locally you need:
+modal>=1.0
+pillow>=10.0
+# poster.py additionally needs a Chromium/Chrome binary (auto-detected).
+# Japanese fonts (Noto Sans CJK JP / Noto Serif CJK JP) are needed for
+# poster text rendering.

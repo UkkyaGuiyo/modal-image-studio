@@ -1,0 +1,35 @@
+# modal-image-studio
+
+自分の Modal アカウント（月 $30 の無料クレジット枠）で、2D 画像生成を繰り返し回すための道具一式です。
+
+- **生成 → 選ぶ → 展開**：テキストから候補を一括生成し、人間が1枚選び、選んだ画像を軸にバリエーションを広げる
+- **ポスター仕上げ**：日本語タイトルなどを正確に合成し、必要ならAIで馴染ませる（文字は崩れない方式）
+- **手順書付き**：Muse がそのまま実行できるステップバイステップのマニュアル（`START_HERE.md` から）
+
+## まず読むもの
+
+| 対象 | ファイル |
+|---|---|
+| Muse（実行担当） | [START_HERE.md](START_HERE.md) |
+| 人間（概要を知りたい） | [docs/manual/00_overview.md](docs/manual/00_overview.md) |
+| できることの実例 | [samples/SAMPLES.md](samples/SAMPLES.md) |
+| 困ったとき | [docs/troubleshooting.md](docs/troubleshooting.md) |
+
+## 構成
+
+- `studio.py` — 生成・バリエーション展開（Modal / FLUX.2 Klein 4B）
+- `select.py` — 人間の選択を記録する
+- `poster.py` — ポスター文字合成＋ブレンド
+- `docs/manual/` — 章立て手順書（00〜17）
+- `docs/howto/` — 目的別の作業ガイド
+- `docs/development-log/` — 開発時の試行錯誤の記録（失敗も含む。切り分けの根拠）
+
+## 大事な前提
+
+- Modal Starter は毎月 $30 のクレジットがありますが、**有効な支払い方法の登録が必須**です（「無料＝支払い情報不要」ではありません）。登録と予算設定は人間が行います（手順は 03 章）
+- 画像の最終選択は人間が行います。Muse は候補の提示と記録まで
+- 実行コストの実測：候補8枚で約 $0.011、ポスターのブレンド1枚で約 $0.006（Modal A10、開発時の実測）
+
+## ライセンス
+
+このリポジトリのコードは Apache License 2.0（`LICENSE`）。使用モデルのライセンスは `THIRD_PARTY_LICENSES.md` を参照。

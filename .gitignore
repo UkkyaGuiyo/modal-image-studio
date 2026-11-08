@@ -1,0 +1,10 @@
+# Generated images and run outputs are local-only (see START_HERE rule 6)
+runs/
+poster_out/
+__pycache__/
+*.pyc
+
+# Never commit credentials or tokens
+.env
+modal.toml
+*.key
