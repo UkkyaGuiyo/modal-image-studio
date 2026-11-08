@@ -61,7 +61,7 @@ python3 poster.py blend --bg runs/<日時>_<名前>/img_002.png \
 ブレンドの標準値（変更不要）：保護＝文字＋6px、再描画＝周辺44pxの帯（halo）、6 steps、guidance 1.0。
 応用：`--blend-mode full` にすると、文字を固定したまま**絵の側だけを全面リスタイル**できる（ビンテージ印刷調など。TEXT-003 の V3）。
 
-> 印刷物らしくシャープな仕上がりが欲しい場合（募集ポスター等）は、ブレンドなしの composite.png のほうが向いている（実例：samples/29_poster_recruitment.png）。
+> 印刷物らしくシャープな仕上がりが欲しい場合（募集ポスター等）は、ブレンドなしの composite.png のほうが向いている（実例：samples/SAMPLES.md の項目29）。
 
 ## テンプレート3種
 
@@ -91,8 +91,8 @@ python3 poster.py blend --bg runs/<日時>_<名前>/img_002.png \
 - 次のステップ：手順3（ブレンド）または保存
 
 テクニックの実測内容：
-- **躍る文字**：1字ごとに font-size・rotate・translateY を変え、ブロック全体も少し傾け、画面端ではみ出させる。art-broken テンプレートがこの考え方の出発点（実例：samples/27_poster_dancing_type.png）
-- **パース文字**：奥行きのある構図で、文字を3つの深度に置く。消失点に小さく、路面には `transform: perspective(360px) rotateX(57deg)` で路面標示のように、手前には画面からはみ出す巨大文字（実例：samples/28_poster_road_perspective.png）
+- **躍る文字**：1字ごとに font-size・rotate・translateY を変え、ブロック全体も少し傾け、画面端ではみ出させる。art-broken テンプレートがこの考え方の出発点（実例：samples/SAMPLES.md の項目27）
+- **パース文字**：奥行きのある構図で、文字を3つの深度に置く。消失点に小さく、路面には `transform: perspective(360px) rotateX(57deg)` で路面標示のように、手前には画面からはみ出す巨大文字（実例：samples/SAMPLES.md の項目28）
 - **ルビ・混植**：HTML の `<ruby>` でふりがな、日英混植もそのまま書ける（TEXT-004 で実測。ブレンド後も正確）
 
 ## 手順5：保存と書き出し

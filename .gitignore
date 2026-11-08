@@ -8,3 +8,17 @@ __pycache__/
 .env
 modal.toml
 *.key
+
+# Sample image files are not committed (only the descriptions in samples/SAMPLES.md)
+samples/*.png
+samples/*.jpg
+samples/*.jpeg
+samples/*.webp
+
+# Secrets and certificates
+.env.*
+*.pem
+*.p12
+*.pfx
+credentials.json
+secrets/

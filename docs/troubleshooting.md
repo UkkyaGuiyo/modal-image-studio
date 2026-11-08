@@ -81,7 +81,7 @@
 
 - 原因の確認：合成しただけの状態（馴染ませ処理をしていない）
 - 直し方：`poster.py blend`（halo モード）で文字周辺だけを馴染ませる。逆に、募集ポスターのようにシャープな印刷物らしさが欲しい場合は、ブレンドなしの composite.png が正解
-- 根拠：TEXT-003 / 募集ポスターデモ（samples/29）
+- 根拠：TEXT-003 / 募集ポスターデモ（samples/SAMPLES.md の項目29）
 
 ## Q. poster.py が「No Chromium/Chrome binary found」で止まる
 
