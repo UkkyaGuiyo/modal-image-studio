@@ -21,7 +21,7 @@
 
 この道具は Modal の無料クレジット（Starter プラン、月 $30）を前提にしています。クレジット額や料金条件は、提供側の都合で変更されることがあります。変更に気づかないまま使い続けないよう、定期確認を運用ルールとして定めます。
 
-> 実例：2026年10月1日から、ネットワーク egress の課金が開始されました。Starter は月1TiBまで無料、超過分は $0.04/GiB です。これは月 $30 の Compute クレジットとは別の料金条件で、クレジットが残っていても転送料金が発生し得ます。本丸の $30 クレジット自体は維持されていましたが、周辺条件は実際に変わります。
+> 実例：2026年10月1日から、ネットワーク egress の課金が開始されました。Starter は月1TiBまで無料、超過分は $0.04/GiB です。この無料枠は Workspace 全体に適用されるもので、Environment ごとに別枠が与えられるものではありません。これは月 $30 の Compute クレジットとは別の料金条件で、クレジットが残っていても転送料金が発生し得ます。本丸の $30 クレジット自体は維持されていましたが、周辺条件は実際に変わります。
 
 ## 手順：月に1回の条件確認
 
@@ -31,7 +31,7 @@
 - コマンド／確認先：
   - Modal の公式料金ページ（https://modal.com/pricing）で、Starter プランのクレジット額と主な従量項目を確認する
   - `modal billing rates` で現在の料金単価（GPU・CPU・Memory 等）を取得し、料金ページの表記と突き合わせる
-  - egress の料金条件は公式ガイド（https://modal.com/docs/guide/network-egress-billing）で確認する。当月の egress 使用量は Dashboard の Usage & Billing で確認する（egress は Workspace 全体の集計であり、Environment 単位ではない点に注意）
+  - egress の料金条件は公式ガイド（https://modal.com/docs/guide/network-egress-billing）で確認する。当月の egress 使用量は Dashboard の Usage & Billing で確認する（無料枠と集計単位は Workspace 全体であり、Environment ごとに別枠ではない点に注意。Usage & Billing では Environment 別に絞り込んで表示できるが、それは表示上の絞り込みであり、無料枠が Environment ごとに分かれる意味ではない）
   - `modal billing summary` で当月の消費状況と見比べる（13 章手順2）
 - 確認項目（すべて確認する）：
   - Starter の月間 Compute クレジット額

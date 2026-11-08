@@ -1,6 +1,6 @@
 # FILELIST — 公開用ステージング（repo 最終ツリーの写し）
 
-生成日：2026-11-08（P7：E.L.I.S.全体検査の P1/P2 指摘に対する修正を反映し再生成）
+生成日：2026-11-08（P7：E.L.I.S.再検査で残った初回実行順序の矛盾と小項目の第2次修正を反映し再生成）
 除外：runs/（生成物・実行ログ）、__pycache__/、samples/*.png（サンプル画像の実ファイル。本人判断により収録しない）　※.gitignore は公開対象に含む
 
 | ファイル | サイズ（bytes） |
@@ -9,8 +9,8 @@
 | AGENTS.md | 929 |
 | LICENSE | 11357 |
 | README.md | 2384 |
-| START_HERE.md | 8976 |
-| THIRD_PARTY_LICENSES.md | 2658 |
+| START_HERE.md | 9175 |
+| THIRD_PARTY_LICENSES.md | 2956 |
 | docs/comparisons/chatgpt-free-vs-modal.md | 7088 |
 | docs/decisions.md | 1721 |
 | docs/development-log/BENCH-001_full.md | 3247 |
@@ -31,23 +31,23 @@
 | docs/howto/expand-selection.md | 1455 |
 | docs/howto/poster.md | 1826 |
 | docs/howto/stop-all.md | 1311 |
-| docs/manual/00_overview.md | 7385 |
+| docs/manual/00_overview.md | 7415 |
 | docs/manual/01_roles.md | 2052 |
-| docs/manual/02_environment.md | 2984 |
+| docs/manual/02_environment.md | 3111 |
 | docs/manual/03_modal_signup.md | 2643 |
 | docs/manual/04_install.md | 1671 |
-| docs/manual/05_auth.md | 2874 |
-| docs/manual/06_repo_setup.md | 2463 |
-| docs/manual/07_first_image.md | 1872 |
+| docs/manual/05_auth.md | 3398 |
+| docs/manual/06_repo_setup.md | 2744 |
+| docs/manual/07_first_image.md | 2655 |
 | docs/manual/08_batch.md | 3045 |
 | docs/manual/09_select.md | 1938 |
 | docs/manual/10_variate.md | 3978 |
-| docs/manual/11_settings.md | 3064 |
+| docs/manual/11_settings.md | 3079 |
 | docs/manual/12_poster.md | 7908 |
 | docs/manual/13_cost_and_stop.md | 3809 |
 | docs/manual/14_troubleshooting.md | 1692 |
 | docs/manual/15_devlog.md | 2296 |
-| docs/manual/16_updates.md | 6278 |
+| docs/manual/16_updates.md | 6624 |
 | docs/manual/17_checklist.md | 2004 |
 | docs/style-catalog.md | 4869 |
 | docs/troubleshooting.md | 6845 |
